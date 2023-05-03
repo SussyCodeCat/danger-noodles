@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 0;
+		}
+		#game {
+			position: relative;
+			width: 400px;
+			height: 400px;
+			margin: 50px auto;
+			border: 1px solid #333;
+			background-color: #fff;
+			overflow: hidden;
+		}
+		.snake {
+			position: absolute;
+			background-color: #333;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+		}
+		.food {
+			position: absolute;
+			background-color: #f00;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="game">
+		<div id="snake" class="snake"></div>
+		<div id="food" class="food"></div>
+	</div>
+	<script src="snake.js"></script>
+</body>
+</html>
